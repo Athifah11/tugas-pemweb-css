@@ -1,0 +1,78 @@
+/* ===== Base styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* ===== Header styles ===== */
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== Section styles ===== */
+section {
+    margin: 20px;
+}
+
+/* ===== Footer styles ===== */
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Tambahan agar teks footer terbaca di latar gelap */
+footer p {
+    color: #ffffff;
+}
+
+/* ===== Different selectors ===== */
+
+/* Element selector */
+h2 {
+    color: black;
+}
+
+/* Class selector */
+.highlight {
+    background-color: orange;
+    color: white;
+    padding: 4px;
+}
+
+/* ID selector */
+#header {
+    border-bottom: 3px solid orange;
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: orange;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: white;
+    background-color: #333333; /* agar link tetap terlihat di latar putih */
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Combinator selector */
+header + main {
+    border-top: 2px solid #333333;
+}
+
+/* ===== Cascade and specificity ===== */
+h1 {
+    color: green !important;
+}
+
+p {
+    color: red;
+}

@@ -1,0 +1,184 @@
+
+        /* GENERAL STYLE */
+        body {
+            color: #333;
+            background-color: #f4f4f4;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1. CLEAR NAVIGATION */
+        nav {
+            background-color: #b96f76;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navigation-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation-menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navigation-menu a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .navigation-menu a:hover {
+            text-decoration: underline;
+            color: #ffe5e0;
+        }
+
+        /* 2. IDENTIFIABLE LINKS */
+        a {
+            color: #0654b3;
+            text-decoration: underline;
+        }
+
+        a:hover,
+        a:focus {
+            color: #002766;
+        }
+
+        /* NAVIGATION LINK OVERRIDE */
+        .navigation-menu a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .navigation-menu a:hover,
+        .navigation-menu a:focus {
+            color: #ffe5e0;
+            text-decoration: underline;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #f8e5e1;
+            color: #994d4d;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 36px;
+        }
+
+        /* 3. SIMPLE AND PREDICTABLE LAYOUTS */
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .sidebar {
+            flex: 1;
+            order: 1;
+            background-color: #f8e5e1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .main-content {
+            flex: 2;
+            order: 2;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* FLOWER IMAGE */
+        .flower-image {
+            width: 250px;
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* 4. READABLE TEXT */
+        .large-text {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .high-contrast-text {
+            color: #000000;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        /* 5. SCREEN READER ACCESSIBILITY */
+        .screen-reader-text {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* BUTTON */
+        .shop-button {
+            background-color: #b96f76;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .shop-button:hover {
+            background-color: #994d4d;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #b96f76;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ffffff;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .main-content {
+                order: unset;
+            }
+
+            .navigation-menu li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+   

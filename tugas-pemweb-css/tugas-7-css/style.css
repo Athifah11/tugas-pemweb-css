@@ -1,0 +1,121 @@
+
+
+        body {
+            background-color: #fff8f6;
+            color: #55443f;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #f5e5e0 !important;
+        }
+
+        .navbar-brand {
+            color: #994d4d !important;
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #994d4d !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #c47b83 !important;
+        }
+
+        /* HERO */
+        .hero {
+            background-color: #f8e5e1;
+            padding: 65px 20px;
+            color: #994d4d;
+        }
+
+        .hero h1 {
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .hero img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* BUTTON */
+        .btn-flower {
+            background-color: #b96f76;
+            color: white;
+            border: none;
+        }
+
+        .btn-flower:hover {
+            background-color: #994d4d;
+            color: white;
+        }
+
+        /* SECTION */
+        .section-title {
+            color: #a65d68;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* CARD */
+        .card {
+            border: 1px solid #f0d9d4;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #fff0ec;
+            height: 100%;
+        }
+
+        .card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            color: #994d4d;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #55443f;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            background-color: #fff0ec;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .form-control {
+            border: 1px solid #e6c5c0;
+        }
+
+        .form-control:focus {
+            border-color: #b96f76;
+            box-shadow: 0 0 0 0.2rem rgba(185, 111, 118, 0.2);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #b96f76;
+            color: white;
+        }
+
+        footer a {
+            color: #ffe5e0;
+            text-decoration: none;
+        }
+
+    

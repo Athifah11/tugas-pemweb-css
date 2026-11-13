@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Product Showcase</h1>
+    <p>Discover our best-selling products</p>
+  </header>
+
+  <main>
+    <section class="products">
+
+      <div class="product">
+        <div class="product-image">
+          <img src="images/headphones.jpg" alt="Wireless Headphones">
+          <span class="badge">New</span>
+        </div>
+        <h2>Wireless Headphones</h2>
+        <p>Comfortable over-ear headphones with clear sound.</p>
+        <div class="product-details">
+          <p>Battery life: 30 hours</p>
+          <p>Price: $59</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <img src="images/smartwatch.jpg" alt="Smart Watch">
+          <span class="badge">Sale</span>
+        </div>
+        <h2>Smart Watch</h2>
+        <p>Track your steps, sleep, and notifications.</p>
+        <div class="product-details">
+          <p>Water resistant: 50 m</p>
+          <p>Price: $89</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <img src="images/speaker.jpg" alt="Portable Speaker">
+          <span class="badge">Hot</span>
+        </div>
+        <h2>Portable Speaker</h2>
+        <p>Compact speaker with deep bass.</p>
+        <div class="product-details">
+          <p>Playtime: 12 hours</p>
+          <p>Price: $45</p>
+        </div>
+      </div>
+
+    </section>
+
+    <h2>Product Specifications</h2>
+    <table class="product-specs">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Color</th>
+          <th>Weight</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Wireless Headphones</td><td>Black</td><td>250 g</td><td>$59</td></tr>
+        <tr><td>Smart Watch</td><td>Silver</td><td>45 g</td><td>$89</td></tr>
+        <tr><td>Portable Speaker</td><td>Blue</td><td>500 g</td><td>$45</td></tr>
+      </tbody>
+    </table>
+
+    <p><a href="#contact">Contact us</a></p>
+
+    <div class="contact-form" id="contact">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Contact Us</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Product Showcase</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* =========================
+   BASE STYLES
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Cascade and Specificity */
+h1 {
+    color: green !important;
+}
+
+p {
+    color: red;
+}
+
+/* Element Selector */
+h2 {
+    color: black;
+}
+
+/* =========================
+   HEADER STYLES
+========================= */
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ID Selector */
+#header {
+    border-bottom: 3px solid orange;
+}
+
+/* =========================
+   SECTION STYLES
+========================= */
+
+section {
+    margin: 20px;
+}
+
+/* Class Selector */
+.highlight {
+    background-color: orange;
+    color: white;
+    padding: 4px;
+}
+
+/* Combinator Selector */
+header + main {
+    border-top: 3px solid orange;
+}
+
+/* =========================
+   LINK STYLES
+========================= */
+
+/* Attribute Selector */
+a[href^="mailto:"] {
+    color: orange;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: white;
+}
+
+/* =========================
+   PARAGRAPH STYLES
+========================= */
+
+/* Pseudo-element Selector */
+p::first-line {
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER STYLES
+========================= */
+
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: orange;
+}

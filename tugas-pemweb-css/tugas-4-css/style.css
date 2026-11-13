@@ -1,0 +1,68 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Column Styles */
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    background-color: #e2e2e2;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    .post img {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Grid Styles */
+.row {
+    overflow: hidden;
+}
+
+/* Post Styles */
+.post img {
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+}

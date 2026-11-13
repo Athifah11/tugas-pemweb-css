@@ -1,0 +1,271 @@
+html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore interesting world trivia, discover new facts, and test your knowledge.">
+    <title>World Trivia - Explore the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <div class="header-content">
+            <a href="#home" class="logo" aria-label="World Trivia home">
+                World<span>Trivia</span>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trivia">Trivia</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#scores">Scores</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <p class="eyebrow">LEARN SOMETHING NEW EVERY DAY</p>
+                <h1>Discover the World Through Trivia!</h1>
+                <p>
+                    Welcome to World Trivia, a place where curiosity meets knowledge.
+                    Explore interesting facts about science, history, geography,
+                    animals, and many more topics from around the world.
+                </p>
+                <a href="#trivia" class="primary-link">Explore Trivia</a>
+            </div>
+        </section>
+
+        <!-- Trivia Section -->
+        <section id="trivia" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">DID YOU KNOW?</p>
+                <h2>Interesting Trivia Facts</h2>
+                <p>Discover surprising facts from different parts of the world.</p>
+            </div>
+
+            <div class="trivia-container">
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=500"
+                        alt="Rocket launching into the sky"
+                    >
+                    <div>
+                        <h3>Space and Science</h3>
+                        <p>
+                            Light from the Sun takes approximately 8 minutes
+                            and 20 seconds to reach Earth.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500"
+                        alt="Beautiful mountain landscape"
+                    >
+                    <div>
+                        <h3>Geography</h3>
+                        <p>
+                            Mount Everest is the highest mountain above
+                            sea level on Earth.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img
+                        src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=500"
+                        alt="Colorful tropical bird perched on a branch"
+                    >
+                    <div>
+                        <h3>Animals</h3>
+                        <p>
+                            Hummingbirds are the only birds that can
+                            fly backward.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="content-section categories-section">
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE YOUR INTERESTS</p>
+                <h2>Trivia Categories</h2>
+                <p>Choose a category and start learning.</p>
+            </div>
+
+            <ul class="category-list">
+                <li><a href="#science">Science</a></li>
+                <li><a href="#geography">Geography</a></li>
+                <li><a href="#animals">Animals</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#technology">Technology</a></li>
+            </ul>
+        </section>
+
+        <!-- Scores Section -->
+        <section id="scores" class="content-section">
+            <div class="section-heading">
+                <p class="eyebrow">TOP PLAYERS</p>
+                <h2>Leaderboard</h2>
+                <p>Check out the highest scores from our trivia players.</p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <caption class="visually-hidden">
+                        World Trivia leaderboard showing player rankings and scores
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Alex</td>
+                            <td>980</td>
+                            <td>USA</td>
+                            <td>Science</td>
+                            <td>02 Nov 2026</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sarah</td>
+                            <td>920</td>
+                            <td>UK</td>
+                            <td>History</td>
+                            <td>02 Nov 2026</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Daniel</td>
+                            <td>870</td>
+                            <td>Indonesia</td>
+                            <td>Geography</td>
+                            <td>01 Nov 2026</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Maria</td>
+                            <td>830</td>
+                            <td>Canada</td>
+                            <td>Animals</td>
+                            <td>01 Nov 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section id="subscribe" class="subscribe-section">
+            <p class="eyebrow">A NEW CHALLENGE EVERY DAY</p>
+            <h2>Get Your Puzzle of the Day!</h2>
+            <p>
+                Challenge yourself with a new trivia question every day.
+                Keep learning and improve your knowledge.
+            </p>
+
+            <button
+                type="button"
+                id="subscribeButton"
+                class="subscribe-button"
+                aria-label="Subscribe to Puzzle of the Day"
+            >
+                Subscribe Now
+            </button>
+
+            <p id="subscribeMessage" class="status-message" aria-live="polite"></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+                <p>
+                    Have a question or suggestion? Send us a message.
+                </p>
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Send Message
+                </button>
+
+                <p id="formMessage" class="status-message" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 World Trivia. All Rights Reserved.</p>
+        <a href="#home" aria-label="Back to top">Back to Top ↑</a>
+    </footer>
+
+</body>
+</html>
+
+

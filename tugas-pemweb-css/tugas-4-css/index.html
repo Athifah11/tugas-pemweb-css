@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Layout Page</h1>
+        <p>Float, clearfix, and responsive layout</p>
+    </header>
+
+    <div class="container">
+
+        <div class="row clearfix">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>This is the first column using float layout.</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>This is the second column using float layout.</p>
+            </div>
+            <div class="column">
+                <h2>Column 3</h2>
+                <p>This is the third column using float layout.</p>
+            </div>
+        </div>
+
+        <div class="post clearfix">
+            <img src="https://via.placeholder.com/400x250" alt="Post image">
+            <h2>Latest Post</h2>
+            <p>The image on the left is floated, and the text wraps around it. The clearfix keeps the container from collapsing.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

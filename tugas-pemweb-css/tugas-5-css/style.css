@@ -1,0 +1,168 @@
+/* =========================
+   BASE STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER STYLES - FLEXBOX
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d2c54;
+    color: white;
+    padding: 20px 40px;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* =========================
+   NAVIGATION STYLES - FLEXBOX
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+/* =========================
+   MAIN CONTENT STYLES
+========================= */
+
+main {
+    padding: 40px;
+}
+
+/* =========================
+   PROJECTS - CSS GRID
+========================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* =========================
+   PROJECT CARD STYLES
+========================= */
+
+.project-card {
+    padding: 25px;
+    margin: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h2 {
+    color: #0d2c54;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* =========================
+   FOOTER STYLES
+========================= */
+
+footer {
+    background-color: #0d2c54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 25px;
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .project-card {
+        margin: 0;
+    }
+}
